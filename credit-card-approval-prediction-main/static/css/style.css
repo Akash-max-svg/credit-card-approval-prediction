@@ -1,0 +1,416 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ===========================
+   Global
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#f4f8fc;
+
+    color:#333;
+
+}
+
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+
+    background:#0d6efd;
+
+    padding:15px 0;
+
+}
+
+.navbar-brand{
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero{
+
+    padding:80px 0;
+
+}
+
+.hero h1{
+
+    color:#0d6efd;
+
+    font-weight:700;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.hero-img{
+
+    width:85%;
+
+    animation:float 3s ease-in-out infinite;
+
+}
+
+
+/* Floating Animation */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn-primary{
+
+    background:#0d6efd;
+
+    border:none;
+
+    padding:12px 28px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#084ec1;
+
+    transform:translateY(-2px);
+
+}
+
+.btn-secondary{
+
+    border-radius:10px;
+
+}
+
+
+/* ===========================
+   Feature Section
+=========================== */
+
+.features{
+
+    padding:60px 0;
+
+}
+
+.feature-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    margin-bottom:25px;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.feature-icon{
+
+    font-size:45px;
+
+    color:#0d6efd;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ===========================
+   Prediction Card
+=========================== */
+
+.prediction-card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.card-header{
+
+    background:#0d6efd;
+
+    color:white;
+
+    padding:25px;
+
+}
+
+.card-header h2{
+
+    margin-bottom:10px;
+
+}
+
+.card-body{
+
+    background:white;
+
+    padding:35px;
+
+}
+
+
+/* ===========================
+   Form
+=========================== */
+
+.form-label{
+
+    font-weight:600;
+
+    margin-bottom:6px;
+
+}
+
+.form-control,
+.form-select{
+
+    border-radius:10px;
+
+    height:48px;
+
+    border:1px solid #ced4da;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 0 10px rgba(13,110,253,.25);
+
+}
+
+
+/* ===========================
+   Result Card
+=========================== */
+
+.result-card{
+
+    background:white;
+
+    margin:80px auto;
+
+    max-width:700px;
+
+    border-radius:18px;
+
+    padding:50px;
+
+}
+
+
+/* ===========================
+   Icons
+=========================== */
+
+.success-icon{
+
+    color:#28a745;
+
+    font-size:90px;
+
+}
+
+.danger-icon{
+
+    color:#dc3545;
+
+    font-size:90px;
+
+}
+
+.warning-icon{
+
+    color:#ffc107;
+
+    font-size:90px;
+
+}
+
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    margin-top:80px;
+
+    background:#0d6efd;
+
+    color:white;
+
+    text-align:center;
+
+    padding:18px;
+
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+
+    text-align:center;
+
+}
+
+.hero-img{
+
+    margin-top:40px;
+
+    width:65%;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.card-body{
+
+    padding:20px;
+
+}
+
+.result-card{
+
+    margin:30px 15px;
+
+    padding:30px;
+
+}
+
+}
+
+
+@media(max-width:576px){
+
+.navbar-brand{
+
+    font-size:18px;
+
+}
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.feature-card{
+
+    padding:20px;
+
+}
+
+.success-icon,
+.danger-icon,
+.warning-icon{
+
+    font-size:70px;
+
+}
+
+.btn{
+
+    width:100%;
+
+    margin-top:10px;
+
+}
+
+}
